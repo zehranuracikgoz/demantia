@@ -1,0 +1,179 @@
+header {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+body {
+    margin: 0;
+    background: #c1d3e2;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+header .logo {
+    width: 70px;
+    opacity: 0.9;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 40px;
+    color: #1D3557;
+}
+
+header p {
+    font-size: 15px;
+    margin: 5px 0 0; 
+    color: #64748b;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.upload-section, .report-section {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 25px rgba(0,0,0,0.08);
+}
+
+.upload-section h2, .report-section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #1D3557;
+}
+
+#drop-area {
+    border: 2px dashed #9ec7dd;
+    background: #f9fcff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#drop-area:hover {
+    background: #eef7ff;
+}
+
+.upload-icon {
+    font-size: 55px;
+    color: #1D3557;
+}
+
+#analyzeBtn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #1D3557;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#analyzeBtn:hover {
+    background: #1D3557;
+}
+
+.preview-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #e8f3ff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.tab-btn.active {
+    background: #1D3557;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.result-box {
+    margin-bottom: 20px;
+}
+
+.bar {
+    width: 100%;
+    background: #eee;
+    height: 22px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar.green {
+    background: #d9f6e4;
+}
+
+.bar-fill {
+    height: 100%;
+    background: #DC3B3B;
+    color: white;
+    text-align: right;
+    padding-right: 8px;
+    line-height: 22px;
+    font-size: 13px;
+}
+
+.green-fill {
+    background: #2FB15A;
+}
+
+.note {
+    background: #fff8e0;
+    border-left: 4px solid #f3c05a;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.gradcam-img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.diagnosis-box {
+    padding: 14px;
+    background: #eef5ff;
+    border-left: 5px solid #1D3557;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}

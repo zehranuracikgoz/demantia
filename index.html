@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Demans Analiz Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="assets/mri.gif" class="logo">
+        <h1>MRIgentic</h1>
+        <p>Derin Öğrenme Destekli Erken Demans Tanı Sistemi</p>
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2></i> Adım 1: Görüntü Yükleme</h2>
+
+            <div id="drop-area" onclick="document.getElementById('fileInput').click();">
+                <input type="file" id="fileInput" hidden>
+                <i class="ri-image-add-line upload-icon"></i>
+                <p>MR Kesiti (Sürükle & Bırak)<br>veya yüklemek için tıklayın</p>
+            </div>
+            <button id="analyzeBtn">
+                <i class="ri-brain-line"></i> Analizi Başlat
+            </button>
+            <img id="preview" class="preview-img" style="display:none;">
+        </section>
+        <section class="report-section">
+            <h2> Adım 2: Yapay Zeka Raporu</h2>
+            <div>
+                <div id="diagnosisBox" class="diagnosis-box">
+                    <i class="ri-microscope-line"></i>
+                    <p class="diag-text">Henüz analiz yapılmadı. Sonuç burada görünecek</p>
+            </div>
+                <div class="note">
+                    <strong>Yasal Uyarı:</strong> Yasal Uyarı: Bu sonuçlar yapay zeka tahminidir. Kesin tanı yerine geçmez.
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
